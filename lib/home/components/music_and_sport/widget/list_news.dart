@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:news_app/data/local/hive_local_storg.dart';
 import 'package:news_app/home/components/music_and_sport/bloc/music_and_sport_cubit.dart';
 
 import '../../../../data/model/news_model.dart';
@@ -11,7 +12,6 @@ class ListNews extends StatelessWidget {
     super.key,
     required this.newsList,
   });
-
   final List<NewsModel> newsList;
 
   @override
@@ -24,6 +24,9 @@ class ListNews extends StatelessWidget {
               .read<MusicAndSportCubit>()
               .onTapNews(newsList.elementAt(index)),
           news: newsList.elementAt(index),
+          isSaved: context
+              .read<HiveStorg>()
+              .isKeyExist(newsList.elementAt(index).title),
         );
       },
     );

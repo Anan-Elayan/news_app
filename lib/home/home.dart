@@ -16,6 +16,12 @@ class Home extends StatelessWidget {
         return SafeArea(
           child: Scaffold(
             appBar: AppBar(
+              leading: IconButton(
+                icon:const Icon(Icons.bookmark),
+                onPressed: () =>context.read<HomeCubit>().goToSavedNews(),
+                color: Colors.white,
+                iconSize: 30,
+              ),
               title: const Center(
                 child: Column(
                   children: [
@@ -74,8 +80,8 @@ class Home extends StatelessWidget {
             floatingActionButtonLocation:
                 FloatingActionButtonLocation.centerDocked,
             floatingActionButton: FloatingActionButton(
-              onPressed: () =>context.read<HomeCubit>().onTapSearch(),
-              backgroundColor:  Colors.black87,
+              onPressed: () => context.read<HomeCubit>().onTapSearch(),
+              backgroundColor: Colors.black87,
               child: const Icon(
                 Icons.search,
                 color: Colors.white,

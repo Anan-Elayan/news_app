@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:news_app/config/enum/loading_type.dart';
+import 'package:news_app/data/local/hive_local_storg.dart';
 import 'package:news_app/home/components/music_and_sport/widget/card_news.dart';
 import 'package:news_app/search_page/bloc/search_cubit.dart';
 
@@ -115,6 +116,8 @@ class SearchBody extends StatelessWidget {
               itemBuilder: (context, index) {
                 return CardNews(
                   news: state.newsList.elementAt(index),
+                  isSaved: context.read<HiveStorg>().isKeyExist(state.newsList.elementAt(index).title),
+
                   onTapNews: () => context
                       .read<SearchCubit>()
                       .onTapNews(state.newsList.elementAt(index)),

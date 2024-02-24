@@ -37,5 +37,7 @@ class HomeCubit extends Cubit<HomeState> {
 
   void onTapSearch(){
   Navigator.pushNamed(context, AppRoot.searchPage);
+  }void goToSavedNews(){
+  Navigator.pushNamed(context, AppRoot.savedNews);
   }
 }
