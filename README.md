@@ -6,9 +6,9 @@ It provides users with a convenient way to stay updated on the latest news from 
 With a clean and intuitive user interface, the News App aims to deliver a seamless news browsing experience.
 
 # Features
-1.News Categories: Browse news articles categorized into different topics such as Technology, Sports, Politics, Entertainment, etc.
-2.Search Functionality: Search for specific news articles using keywords or phrases.
-3.Customization: Customize news preferences and favorite topics for personalized content recommendations.
+1. News Categories: Browse news articles categorized into different topics such as Technology, Sports, Politics, Entertainment, etc.
+2. Search Functionality: Search for specific news articles using keywords or phrases.
+3. Customization: Customize news preferences and favorite topics for personalized content recommendations.
 
 
 # Technology Stack
