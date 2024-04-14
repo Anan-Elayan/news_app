@@ -1,12 +1,21 @@
 # news_app
 
-A new Flutter project.
+# OverView
+The News App is a mobile application developed using Flutter and Bloc state management.
+It provides users with a convenient way to stay updated on the latest news from various sources and categories.
+With a clean and intuitive user interface, the News App aims to deliver a seamless news browsing experience.
 
-## Getting Started
+# Features
+1.News Categories: Browse news articles categorized into different topics such as Technology, Sports, Politics, Entertainment, etc.
+2.Search Functionality: Search for specific news articles using keywords or phrases.
+3.Customization: Customize news preferences and favorite topics for personalized content recommendations.
 
-This project is a starting point for a Flutter application.
 
-
+# Technology Stack
+- CroosBlatform : Flutter
+- State Management: Bloc
+- UI Design: Material Design
+- API Integration: Integration with news APIs (e.g., NewsAPI, RSS feeds)
 
 https://github.com/Anan-Elayan/news_app/assets/99610614/d834d093-ae04-49bf-9935-97f114a8b4f3
 
